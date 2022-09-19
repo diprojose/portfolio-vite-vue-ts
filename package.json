@@ -6,10 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
+    "build:client": "vite build --outDir dist",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.37"
+    "vue": "^3.2.37",
+    "vue-meta": "^2.4.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.0",
