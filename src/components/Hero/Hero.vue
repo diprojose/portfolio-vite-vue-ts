@@ -3,10 +3,18 @@
 export default {
   data: () => {
     return {
+      yearsOfExperience: 0
     }
   },
 
+  created() {
+    this.yearsOfExperience = this.calculateYear(2014);
+  },
+
   methods: {
+    calculateYear(year: number) {
+      return new Date().getFullYear() - year;
+    }
   },
 
   computed: {
@@ -18,10 +26,14 @@ export default {
 <template>
   <div class="hero-container">
     <div class="hero-text-container">
-      <h2 class="name">José Antonio Parejo Tovar</h2>
-      <h1 class="position">Senior Software Engineer</h1>
-    </div>
-    <div class="hero-image-container">
+      <p class="hero-text dafoe">Hi people, I'm</p>
+      <h1 class="hero-name">JOSE PAREJO</h1>
+      <h2 class="hero-position">Software Engineer</h2>
+      <p class="hero-text">I love to bring people ideas to life or online if you prefer. I'm a developer with {{yearsOfExperience}} years of experience in web development, SEO and business.</p>
+      <div class="call-to-action">
+        <button class="about-button">About me</button>
+        <button class="work-button">Work</button>
+      </div>
     </div>
   </div>
 </template>
@@ -29,28 +41,79 @@ export default {
 <style lang="scss" scoped>
 
 .hero-container {
-  min-height: 400px;
   background-color: $dark-gray;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 25px;
+  min-height: 560px;
+  display: flex;
+  justify-content: center;
   .hero-text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    h1, h2 {
+    padding: 50px 25px;
+    max-width: 700px;
+    text-align: center;
+    .hero-text {
+      font-size: 1.3rem;
+      &.dafoe {
+        font-size: 2.5rem;
+      }
+    }
+    .hero-name {
+      font-size: 5rem;
+      color: $white;
+    }
+    .hero-position {
+      font-size: 3.4rem;
+      font-weight: bold;
+      padding-bottom: 10px;
+      color: $green;
+      text-transform: uppercase;
+    }
+    h1, h2, p {
       margin: 0;
       padding: 0;
       color: $gray;
     }
-  }
-  .hero-image-container {
-    position: relative;
-    .jose-photo {
-      width: auto;
-      position: absolute;
-      max-height: 400px;
+    .call-to-action {
+      padding-top: 20px;
+      .about-button {
+        background: transparent;
+        border: 1px solid $white;
+        color: $white;
+        padding: 10px 15px;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover {
+          background: $green;
+          color: $dark-gray;
+          border: 1px solid $green;
+        }
+      }
+      .work-button {
+        background: $green;
+        border: 1px solid $green;
+        color: $dark-gray;
+        padding: 10px 15px;
+        margin-left: 20px;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover {
+          background: $green;
+          color: $dark-gray;
+        }
+      }
     }
+  }
+}
+
+@keyframes bigSmall {
+  from {
+    background-size: 50%;
+  }
+  to {
+    background-size: 100%;
   }
 }
 </style>

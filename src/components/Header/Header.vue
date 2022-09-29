@@ -20,7 +20,7 @@ export default {
     </div>
     <div class="menu">
       <ul class="menu-list" :class="{ responsive: showMenu }">
-        <img @click="openResponsiveMenu()" src="../../assets/close.png" class="close-button" alt="close">
+        <img @click="openResponsiveMenu()" src="../../assets/img/close.png" class="close-button" alt="close">
         <li class="menu-list-item">About</li>
         <li class="menu-list-item">Work</li>
         <li class="menu-list-item">Experience</li>
@@ -30,7 +30,7 @@ export default {
         </li>
       </ul>
       <div @click="openResponsiveMenu()" :class="{ responsive: showMenu }" class="overlay"></div>
-      <img @click="openResponsiveMenu()" class="responsive-menu" src="../../assets/menu.png" alt="Menu">
+      <img @click="openResponsiveMenu()" class="responsive-menu" src="../../assets/img/menu.png" alt="Menu">
     </div>
   </div>
 </template>
