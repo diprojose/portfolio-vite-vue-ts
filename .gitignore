@@ -6,11 +6,15 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+firebase.json
+.firebaserc
 
 node_modules
 dist
 dist-ssr
 *.local
+.firebase
+.github
 
 # Editor directories and files
 .vscode/*
