@@ -1,11 +1,5 @@
-<script lang="ts">
-export default {
-  
-}
-</script>
-
 <template>
-  <div class="about">
+  <div class="about" id="about">
     <div class="about-container">
       <div class="col center">
         <img class="jose-image" src="../../assets/img/joseparejo.png" alt="">
@@ -20,6 +14,12 @@ export default {
   </div>
 </template>
 
+<script lang="ts">
+export default {
+  
+}
+</script>
+
 <style lang="scss" scoped>
 .about {
   background-color: $dark-gray;
@@ -28,6 +28,9 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    @include responsive(xs) {
+      grid-template-columns: 1fr;
+    }
     .col {
       position: relative;
       &.center {
@@ -40,6 +43,9 @@ export default {
         text-transform: uppercase;
         line-height: 3rem;
         padding-bottom: 1rem;
+        @include responsive(xs) {
+          padding-top: 20px;
+        }
       }
       .about-title-minor {
         color: $green;
@@ -54,7 +60,8 @@ export default {
         max-width: 500px;
       }
       .jose-image {
-        max-height: 500px;
+        max-height: 400px;
+        width: auto;
       }
     }
   }

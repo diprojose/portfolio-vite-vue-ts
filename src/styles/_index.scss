@@ -11,5 +11,19 @@
   &:hover {
     background: $green;
     color: $dark-gray;
+    border: 1px solid $green;
   }
+  &.light-button {
+    border: 1px solid $dark-gray;
+    color: $dark-gray;
+    &:hover {
+      background: $green;
+      color: $dark-gray;
+      border: 1px solid $green;
+    }
+  }
+}
+
+.white {
+  color: $white;
 }

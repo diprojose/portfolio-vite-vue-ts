@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "name": "BeMedSearch",
+    "stack": ["vite", "vue", "firebase"],
+    "thumb": "apop-1.jpg",
+    "images": ["bemedsearch-1.png"],
+    "shortDescription": "",
+    "description": "Welcome to BeMedSearch, a web application built with Vue.js and powered by Firebase database technology. Our platform is designed to simulate a labor, post-labor, and hemorrhage, providing doctors with a comprehensive tool to test their skills and knowledge.\n\nOne of the key features of BeMedSearch is the ability to store all actions made by the doctor during the simulation. This includes every click, hover on buttons, and the time it takes to save the patient. This feature allows doctors to review their performance and identify areas for improvement.\n\nOne of the biggest challenges during the development of BeMedSearch was building a content manager service for the client. We understood that the client needed to create simulations with different parameters, choose from a range of available medicines, ask questions at the end of the simulation, and even conduct surveys if needed. Our team worked hard to ensure that the content manager service was user-friendly, efficient, and met the client's needs.\n\nOur platform is designed to be easy to use and navigate, with a clean and intuitive interface. Doctors can select the type of simulation they want to perform and start testing their skills right away. We provide detailed feedback and analysis after each simulation, allowing doctors to track their progress and improve their performance over time.\n\nIn summary, BeMedSearch is an innovative platform that provides doctors with a comprehensive tool to test their skills and knowledge. Our team has worked hard to ensure that the platform is user-friendly, efficient, and meets the needs of our clients. Thank you for considering BeMedSearch as part of your practice.",
+    "link": "https://apop-simulator.web.app/"
+  },
+  {
+    "id": 2,
+    "name": "E-track",
+    "stack": ["vue", "nest"],
+    "thumb": "etrack-2.jpg",
+    "shortDescription": "",
+    "description": "Introducing our cutting-edge analytics application, designed to provide insights into the psychological behavior of users. The application's frontend is built with Vue, providing a user-friendly interface for easy navigation and analysis. Our backend is built with Nest.js, ensuring fast and efficient data processing. One of the key features of our application is the ability to track data from users through a javascript code that can be easily injected into a client's website. This allows for real-time data collection and analysis, providing valuable insights into user behavior.\n\nOur application also includes heat maps, graphs, and simulations of mouse movement, allowing users to visualize and understand user behavior. This can help in understanding user engagement and interaction with the website, providing valuable insights for businesses to improve their online presence. Whether you're a business owner, marketer, or researcher, our analytics application is the perfect tool to help you understand and improve user engagement.",
+    "link": "https://e-trackanalytics.com/"
+  },
+  {
+    "id": 3,
+    "name": "Ideias",
+    "stack": ["nuxt", "firebase"],
+    "thumb": "ideias-2.jpg",
+    "images": ["ideias-1.png", "ideias-2.png"],
+    "shortDescription": "",
+    "description": "Welcome to Ideias, a web application built with Nuxt.js technology that provides a platform for users to share their ideas and connect with others. As a developer of this web application, I'm excited to share with you the development process and the challenges we faced while building it.\n\nOne of the main challenges we faced while developing Ideias was the ability to create custom PDF covers with the Ideias logo and add numeration to all pages. We understood that these features were important for users to have a professional-looking document, so we worked tirelessly to ensure that this was possible.\n\nAs part of the development process, we also created a content manager service for the Ideias owner. This service allows the owner to approve works from users, edit texts, and more. This feature is essential for ensuring that the quality of the content on Ideias remains high and that users have a positive experience on the platform.\n\nOur web application also provides a login and register page for users, a profile page, and the ability to follow other members. This feature allows users to connect with others who share similar interests and ideas.\n\nAs a developer, I am proud of the work we have done on Ideias. We have created a user-friendly platform that allows users to share their ideas with others and connect with a wider community. Our team worked tirelessly to ensure that the platform meets the highest standards of quality and functionality.\n\nThank you for considering Ideias as part of your online experience. We look forward to seeing your ideas and contributions on our platform.",
+    "link": "https://ideiasjournal.com/"
+  },
+  {
+    "id": 4,
+    "name": "Origins Films",
+    "stack": ["vue"],
+    "thumb": "origins-films-2.jpg",
+    "shortDescription": "",
+    "description": "I am excited to present an application I built with Vue.js technology. It is designed to revolutionize Latin content creation, production, post-production, and digital distribution. the application provides a comprehensive platform to showcase their talent and share their stories with the world.\n\nOne of the features of our application is the ability to retrieve videos from Vimeo, allowing to showcase their work to a wider audience.\n\nBuilt with the latest web development technologies, my application features a user-friendly interface that allows for easy navigation and browsing of content. ",
+    "link": "https://originsfilms.tv/"
+  }
+]
