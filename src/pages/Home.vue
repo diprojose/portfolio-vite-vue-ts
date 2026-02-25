@@ -1,43 +1,28 @@
 <template>
-  <div>
-    <Hero ref="hero" />
-    <About ref="about" />
-    <Work ref="work" />
-    <Contact ref="contact" />
-  </div>
+  <main class="home-page">
+    <Hero />
+    <MarqueeBanner />
+    <SelectedWorks />
+    <TheMaker />
+    <ProvenProcess />
+    <Insights />
+    <Footer />
+  </main>
 </template>
 
-<script lang="ts">
-import Hero from '../components/Hero/Hero.vue';
-import About from "../components/About/About.vue"
-import Work from '../components/Work/Work.vue';
-import Footer from '../components/Footer/Footer.vue'
-import Contact from '../components/Contact/Contact.vue'
-
-export default {
-  components: {
-    Hero,
-    About,
-    Work,
-    Contact,
-    Footer
-  },
-}
+<script setup lang="ts">
+import Hero from '../components/Hero.vue'
+import MarqueeBanner from '../components/MarqueeBanner.vue'
+import SelectedWorks from '../components/SelectedWorks.vue'
+import TheMaker from '../components/TheMaker.vue'
+import ProvenProcess from '../components/ProvenProcess.vue'
+import Insights from '../components/Insights.vue'
+import Footer from '../components/Footer.vue'
 </script>
 
-<style>
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.dafoe {
-  font-family: 'Mr Dafoe', cursive;
-}
-
-@font-face {
-  font-family: "Mr Dafoe";
-  src: local("Mr Dafoe"),
-    url(/fonts/MrDafoe-Regular.ttf) format("truetype");
+<style lang="scss" scoped>
+.home-page {
+  width: 100%;
+  min-height: 100vh;
 }
 </style>

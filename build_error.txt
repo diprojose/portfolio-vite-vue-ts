@@ -1,0 +1,74 @@
+npm warn Unknown user config "msvs_version". This will stop working in the next major version of npm.
+npm warn Unknown global config "msvs_version". This will stop working in the next major version of npm.
+npm warn Unknown global config "python". This will stop working in the next major version of npm.
+
+> jose-portfolio-vue-ts@0.0.0 build
+> vue-tsc --noEmit && vite build
+
+[33mYou are using Node.js 20.18.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.[39m
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │           @import "./src/styles/_index.scss";
+  │                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\App.vue 2:19  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+4 │ @import './styles/index.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\App.vue 4:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │           @import "./src/styles/_index.scss";
+  │                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\pages\Home.vue 2:19  root stylesheet
+
+[32m✓[39m 12 modules transformed.
+[31m✗[39m Build failed in 1.00s
+[31merror during build:
+[31m[vite:css] [sass] Can't find stylesheet to import.
+  ╷
+2 │           @import "./src/styles/_index.scss";
+  │                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+  src\App.vue 2:19  root stylesheet[31m
+file: [36mC:/Users/Jose_Parejo/Documents/Projects/portfolio-vite-vue-ts/src/App.vue?vue&type=style&index=0&lang.scss[31m
+[33m
+[sass] Can't find stylesheet to import.
+  ╷
+2 │           @import "./src/styles/_index.scss";
+  │                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+  src\App.vue 2:19  root stylesheet
+[31m
+Error: Can't find stylesheet to import.
+  ╷
+2 │           @import "./src/styles/_index.scss";
+  │                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+  src\App.vue 2:19  root stylesheet
+    at Object.wrapException (C:\Users\Jose_Parejo\Documents\Projects\portfolio-vite-vue-ts\node_modules\sass\sass.dart.js:2337:47)
+    at C:\Users\Jose_Parejo\Documents\Projects\portfolio-vite-vue-ts\node_modules\sass\sass.dart.js:89967:25
+    at _wrapJsFunctionForAsync_closure.$protected (C:\Users\Jose_Parejo\Documents\Projects\portfolio-vite-vue-ts\node_modules\sass\sass.dart.js:5005:15)
+    at _wrapJsFunctionForAsync_closure.call$2 (C:\Users\Jose_Parejo\Documents\Projects\portfolio-vite-vue-ts\node_modules\sass\sass.dart.js:38601:12)
+    at _awaitOnObject_closure.call$1 (C:\Users\Jose_Parejo\Documents\Projects\portfolio-vite-vue-ts\node_modules\sass\sass.dart.js:38589:32)
+    at Object._rootRunUnary (C:\Users\Jose_Parejo\Documents\Projects\portfolio-vite-vue-ts\node_modules\sass\sass.dart.js:5423:18)
+    at StaticClosure.<anonymous> (C:\Users\Jose_Parejo\Documents\Projects\portfolio-vite-vue-ts\node_modules\sass\sass.dart.js:129574:16)
+    at _CustomZone.runUnary$2$2 (C:\Users\Jose_Parejo\Documents\Projects\portfolio-vite-vue-ts\node_modules\sass\sass.dart.js:40032:39)
+    at _Future__propagateToListeners_handleValueCallback.call$0 (C:\Users\Jose_Parejo\Documents\Projects\portfolio-vite-vue-ts\node_modules\sass\sass.dart.js:39090:51)
+    at Object._Future__propagateToListeners (C:\Users\Jose_Parejo\Documents\Projects\portfolio-vite-vue-ts\node_modules\sass\sass.dart.js:5215:93)[39m

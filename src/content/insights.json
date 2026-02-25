@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "WHY TYPE SAFETY IS NON-NEGOTIABLE FOR LARGE SCALE APPS",
+    "category": "ENGINEERING",
+    "date": "JUNE 12, 2024",
+    "imageSrc": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800&h=600",
+    "content": "As applications grow, the implicit assumption that variables contain what we expect them to contain falls apart. In large codebases, TypeScript isn't just a linter; it's executable documentation. When we migrated our core monolithic services to a strictly typed architecture, our runtime error rate dropped by over 40%.\n\nType safety creates a contract between the developer and the compiler. It forces you to think about edge cases, null values, and complex data shapes before the code even runs in a browser.\n\n### The Cost of 'Any'\nUsing `any` is the equivalent of turning off the safety mechanisms on heavy machinery. It might speed up initial development, but the technical debt it incurs is astronomical. A strict `tsconfig.json` combined with comprehensive interfaces ensures that API contracts are respected across the entire application stack."
+  },
+  {
+    "id": 2,
+    "title": "THE HIDDEN VALUE OF WHITESPACE IN B2B DASHBOARDS",
+    "category": "DESIGN",
+    "date": "MAY 28, 2024",
+    "imageSrc": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800&h=600",
+    "content": "Enterprise dashboards are notoriously cluttered. The instinct is to cram as much data as possible into a single viewport. However, cognitive load limits mean users actually process less information when it's presented without adequate 'breathing room'.\n\nWhitespace, or negative space, is an active design element. It guides the eye, establishes hierarchy, and groups related elements without the need for explicit borders or lines.\n\n### A Brutalist Approach to Whitespace\nIn our Tech-Noir aesthetic, whitespace isn't just empty space; it's tension. It's the void that gives structure to the stark, heavy typography and rigid grids. By increasing padding and margins exponentially on high-priority data points, we force the user's attention exactly where it needs to be."
+  },
+  {
+    "id": 3,
+    "title": "WEBGL AND SHADERS: BRINGING ATOMIC PHYSICS TO THE BROWSER",
+    "category": "TECHNOLOGY",
+    "date": "APRIL 15, 2024",
+    "imageSrc": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800&h=600",
+    "content": "For years, the web was a purely DOM-based 2D environment. Technologies like Three.js and custom GLSL shaders have unlocked direct access to the GPU, allowing us to render millions of particles or manipulate pixels in real-time.\n\nThe challenge isn't just rendering; it's performance and aesthetics. Implementing complex physics loops, like the Torus particle ring in the Hero section of this portfolio, requires careful management of animation frames and highly optimized mathematical functions.\n\n### Shaders as Art\nFragment shaders allow us to treat standard HTML images as fluid, interactive canvases. By taking control of the rendering pipeline, we can implement effects completely impossible with standard CSS, from procedural noise to liquid distortion on hover."
+  },
+  {
+    "id": 4,
+    "title": "BUILDING RESILIENT ARCHITECTURES WITH COMPOSABLE VUE 3",
+    "category": "ENGINEERING",
+    "date": "MARCH 02, 2024",
+    "imageSrc": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800&h=600",
+    "content": "The introduction of the Composition API in Vue 3 fundamentally changed how we structure frontend logic. Instead of grouping code by component lifecycle (data, methods, computed), we can now group code by logical concern.\n\nThis shift allows for the creation of 'Composables'—reusable functions that encapsulate stateful logic. This drastically reduces massive component files and promotes a DRY (Don't Repeat Yourself) architecture where complex state management (like handling 3D scene re-renders or theme switching) can be abstracted into isolated, testable units."
+  }
+]
