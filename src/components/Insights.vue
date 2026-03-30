@@ -1,5 +1,6 @@
 <template>
   <section class="insights" id="insights">
+    <div class="insights__bg-pattern"></div>
     <div class="insights__header">
       <h2 class="section-title">INSIGHTS</h2>
       <router-link to="/insights" class="view-all-link">VIEW ALL INSIGHTS ↗</router-link>
@@ -35,6 +36,20 @@ const posts = insightsData.slice(0, 3)
   padding: 8rem 2rem;
   max-width: 1400px;
   margin: 0 auto;
+  position: relative;
+  
+  &__bg-pattern {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    // Dot matrix pattern
+    background-image: radial-gradient(var(--color-text-muted) 1.5px, transparent 1.5px);
+    background-size: 40px 40px;
+    opacity: 0.2;
+    mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  }
   
   &__header {
     margin-bottom: 4rem;

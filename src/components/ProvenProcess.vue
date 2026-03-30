@@ -1,5 +1,6 @@
 <template>
   <section class="proven-process" id="process">
+    <div class="proven-process__bg-pattern"></div>
     <div class="proven-process__header">
       <h2 class="section-label">MY PROVEN PROCESS</h2>
       <h3 class="section-title">FROM VISION<br>TO REALITY</h3>
@@ -51,8 +52,24 @@
   padding: 8rem 0;
   max-width: 1400px;
   margin: 0 auto;
+  position: relative;
   border-bottom: 2px solid var(--color-text-muted); // Section separator
   
+  &__bg-pattern {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    // Technical blueprint grid
+    background-image: 
+      linear-gradient(var(--color-text-muted) 1px, transparent 1px),
+      linear-gradient(90deg, var(--color-text-muted) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.05;
+    mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  }
+
   &__header {
     padding: 0 2rem;
     margin-bottom: 4rem;
