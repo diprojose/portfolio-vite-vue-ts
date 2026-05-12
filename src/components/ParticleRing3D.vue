@@ -41,7 +41,7 @@ const initThree = () => {
 
   // Camera setup
   camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 200);
-  camera.position.z = 60; // Pull camera further back to see the wider ring
+  camera.position.z = 85; // Pull camera back so full ring fits within standard 1080p viewport height
 
   // Renderer setup
   renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, powerPreference: "high-performance" });

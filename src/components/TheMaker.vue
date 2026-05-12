@@ -22,7 +22,7 @@
             <span class="stat-item__label">PATENTS<br>FILED</span>
           </div>
           <div class="stat-item">
-            <span class="stat-item__value">8yr</span>
+            <span class="stat-item__value">+10yr</span>
             <span class="stat-item__label">PRODUCT<br>DESIGN</span>
           </div>
         </div>

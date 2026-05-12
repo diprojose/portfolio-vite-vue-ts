@@ -2,16 +2,18 @@
   <section class="hero">
     <ParticleRing3D />
     <div class="hero__content">
+      <p class="hero__eyebrow reveal-up">JOSE PAREJO</p>
+
       <h1 class="hero__title">
-        <span class="reveal-up">ARCHITECTING</span>
-        <span class="reveal-up">DIGITAL</span>
-        <span class="reveal-up">
-          <span class="text-stroke">SYSTEMS</span> &
-        </span>
-        <span class="reveal-up">TANGIBLE</span>
-        <span class="reveal-up text-orange">INNOVATIONS</span>
+        <span class="reveal-up">FULLSTACK</span>
+        <span class="reveal-up">ENGINEER BUILDING</span>
+        <span class="reveal-up text-orange">DIGITAL PRODUCTS</span>
       </h1>
-      
+
+      <p class="hero__subtitle reveal-up">
+        +10 years building scalable web applications for startups and companies.
+      </p>
+
       <div class="hero__action reveal-up">
         <router-link to="/#works" class="btn btn--outline">
           <span class="icon">↓</span> EXPLORE WORKS
@@ -28,14 +30,21 @@ import ParticleRing3D from './ParticleRing3D.vue'
 onMounted(() => {
   // Simple intersection observer or class toggle for the reveal
   setTimeout(() => {
+    document.querySelector('.hero__eyebrow')?.classList.add('is-visible')
+
     document.querySelectorAll('.hero__title .reveal-up').forEach((el, index) => {
       setTimeout(() => {
         el.classList.add('is-visible')
-      }, index * 200)
+      }, 150 + index * 200)
     })
+
+    setTimeout(() => {
+      document.querySelector('.hero__subtitle')?.classList.add('is-visible')
+    }, 900)
+
     setTimeout(() => {
       document.querySelector('.hero__action')?.classList.add('is-visible')
-    }, 1000)
+    }, 1100)
   }, 100)
 })
 </script>
@@ -64,8 +73,42 @@ onMounted(() => {
     pointer-events: none; // Let mouse events pass through to particle canvas
   }
   
+  &__eyebrow {
+    font-family: var(--font-body);
+    font-size: clamp(0.75rem, 1vw, 0.875rem);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #a0a0a0;
+    margin: 0 0 1.5rem;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.8s ease;
+
+    &.is-visible {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  &__subtitle {
+    font-family: var(--font-body);
+    font-size: clamp(1rem, 1.4vw, 1.125rem);
+    line-height: 1.5;
+    color: var(--color-text-muted);
+    max-width: 32rem;
+    margin: 1.5rem auto 0;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.8s ease;
+
+    &.is-visible {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
   &__title {
-    font-size: clamp(3rem, 10vw, 9rem);
+    font-size: clamp(2.5rem, 8.5vw, 7.5rem);
     line-height: 0.9;
     letter-spacing: -0.02em;
     display: flex;
@@ -95,7 +138,7 @@ onMounted(() => {
   }
   
   &__action {
-    margin-top: 4rem;
+    margin-top: 2.5rem;
     overflow: hidden;
     transform: translateY(50%);
     opacity: 0;
